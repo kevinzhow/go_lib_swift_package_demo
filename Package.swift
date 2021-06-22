@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "go_lib_swift_package_demo",
-            targets: ["go_lib_swift_package_demo"]),
+            targets: ["go_lib_swift_package_demo", "HappyNasa"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +21,9 @@ let package = Package(
         .target(
             name: "go_lib_swift_package_demo",
             dependencies: []),
+        .binaryTarget(
+                    name: "HappyNasa",
+                    path: "Sources/hello.xcframework"),
         .testTarget(
             name: "go_lib_swift_package_demoTests",
             dependencies: ["go_lib_swift_package_demo"]),
