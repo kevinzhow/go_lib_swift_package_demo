@@ -36,7 +36,8 @@
 - (nonnull instancetype)initWithRef:(_Nonnull id)ref;
 - (nonnull instancetype)init;
 @property (nonatomic) NSString* _Nonnull apiKey;
-- (HelloAPOD* _Nullable)getAPOD:(NSError* _Nullable* _Nullable)error;
+// skipped method NasaClient.GetAPOD with unsupported parameter or return types
+
 @end
 
 FOUNDATION_EXPORT NSString* _Nonnull HelloGreetings(NSString* _Nullable name);

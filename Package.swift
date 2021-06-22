@@ -23,7 +23,7 @@ let package = Package(
             dependencies: []),
         .binaryTarget(
                     name: "HappyNasa",
-                    path: "Sources/hello.xcframework"),
+                    path: "Sources/Hello.xcframework"),
         .testTarget(
             name: "go_lib_swift_package_demoTests",
             dependencies: ["go_lib_swift_package_demo"]),
